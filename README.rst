@@ -24,9 +24,8 @@ Example
 
  from asa import ASA
 
- # Initialize a RakutenMA instance with an empty model
- # the default ja feature set is set already
- asa = ASA(path-to-asa)
+ # Initialize a ASA instance
+ asa = ASA(path-to-asa, encoding='utf8')
 
  # Let's analyze a sample sentence
  asa.parse('彼は村長だ')
