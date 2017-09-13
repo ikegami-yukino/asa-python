@@ -4,7 +4,7 @@ import os
 import re
 from setuptools import setup
 
-with open(os.path.join('rakutenma', '__init__.py'), 'r', encoding='utf8') as f:
+with open(os.path.join('asa', '__init__.py'), 'r', encoding='utf8') as f:
     version = re.compile(
         r'.*__version__ = "(.*?)"', re.S).match(f.read()).group(1)
 

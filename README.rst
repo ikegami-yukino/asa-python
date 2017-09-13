@@ -65,12 +65,12 @@ Copyright
 ASA Python
 (c) 2017- Yukino Ikegami. All Rights Reserved.
 
-.. |pyversion| image:: https://img.shields.io/pypi/pyversions/rakutenma.svg
+.. |pyversion| image:: https://img.shields.io/pypi/pyversions/asa.svg
 
-.. |version| image:: https://img.shields.io/pypi/v/rakutenma.svg
-    :target: http://pypi.python.org/pypi/rakutenma/
+.. |version| image:: https://img.shields.io/pypi/v/asa.svg
+    :target: http://pypi.python.org/pypi/asa/
     :alt: latest version
 
-.. |license| image:: https://img.shields.io/pypi/l/rakutenma.svg
-    :target: http://pypi.python.org/pypi/rakutenma/
+.. |license| image:: https://img.shields.io/pypi/l/asa.svg
+    :target: http://pypi.python.org/pypi/asa/
     :alt: license
