@@ -32,7 +32,7 @@ class ASA(object):
         return results
 
     def parse(self, sentence):
-        command = 'echo %s | java -cp %s cl.asa.Asa' % (sentence, self.jar)
+        command = 'echo %s | java -cp %s cl.asa.Asa 2>/dev/null' % (sentence, self.jar)
         proc = Popen(command, shell=True, stdin=PIPE, stdout=PIPE)
         asa_return = proc.communicate()[0].decode(self.encoding)
         return self._parse_asa_return(asa_return)
