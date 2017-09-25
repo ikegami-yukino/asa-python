@@ -9,7 +9,7 @@ ASA_VERSION = '20170503'
 
 
 class ASA(object):
-    def __init__(self, path, encoding='utf8'):
+    def __init__(self, path):
         self.jar = os.path.join(path, 'ASA%s.jar' % ASA_VERSION)
         os.chdir(path)
         self.encoding = encoding
