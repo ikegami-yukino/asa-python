@@ -11,7 +11,7 @@ ASA_VERSION = '20170503'
 class ASA(object):
     def __init__(self, asa_dir):
         self.jar = os.path.join(asa_dir, 'ASA%s.jar' % ASA_VERSION)
-        os.chdir(path)
+        os.chdir(asa_dir)
 
     def _parse_asa_return(self, asa_return):
         results = []
