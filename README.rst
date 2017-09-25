@@ -5,6 +5,8 @@ ASA Python
 
 Japanese Argument Structure Analyzer (ASA) client for Python.
 
+It requires ASA (available at http://www.cl.cs.okayama-u.ac.jp/study/project/asa/asa-scala/download/ ; Written in Japanese)
+
 For details about ASA, See http://www.cl.cs.okayama-u.ac.jp/study/project/asa/ (Written in Japanese)
 
 Contributions are welcome!
@@ -14,7 +16,10 @@ Installation
 ==============
 
 ::
-
+ mkdir asa
+ cd asa
+ wget http://www.cl.cs.okayama-u.ac.jp/wp-content/uploads/2017/05/asa20170503.tgz
+ tar xzf asa20170503.tgz
  pip install asa
 
 Example
@@ -25,7 +30,7 @@ Example
  from asa import ASA
 
  # Initialize a ASA instance
- asa = ASA(path-to-asa, encoding='utf8')
+ asa = ASA(path-to-asa)
 
  # Let's analyze a sample sentence
  asa.parse('彼は村長だ')
