@@ -31,10 +31,10 @@ Example
  from asa import ASA
 
  # Initialize a ASA instance
- asa = ASA(path-to-asa)
+ analyzer = ASA(path-to-asa)
 
  # Let's analyze a sample sentence
- asa.parse('彼は村長だ')
+ analyzer.parse('彼は村長だ')
  # =>
  [{'category': '人',
    'frame': '1-copula',

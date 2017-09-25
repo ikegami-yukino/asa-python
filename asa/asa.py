@@ -9,10 +9,9 @@ ASA_VERSION = '20170503'
 
 
 class ASA(object):
-    def __init__(self, path):
-        self.jar = os.path.join(path, 'ASA%s.jar' % ASA_VERSION)
+    def __init__(self, asa_dir):
+        self.jar = os.path.join(asa_dir, 'ASA%s.jar' % ASA_VERSION)
         os.chdir(path)
-        self.encoding = encoding
 
     def _parse_asa_return(self, asa_return):
         results = []
@@ -34,5 +33,5 @@ class ASA(object):
     def parse(self, sentence):
         command = 'echo %s | java -cp %s cl.asa.Asa 2>/dev/null' % (sentence, self.jar)
         proc = Popen(command, shell=True, stdin=PIPE, stdout=PIPE)
-        asa_return = proc.communicate()[0].decode(self.encoding)
+        asa_return = proc.communicate()[0].decode()
         return self._parse_asa_return(asa_return)
