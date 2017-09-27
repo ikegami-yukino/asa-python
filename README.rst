@@ -5,7 +5,7 @@ ASA Python
 
 Japanese Argument Structure Analyzer (ASA) client for Python.
 
-It requires ASA (available at http://www.cl.cs.okayama-u.ac.jp/study/project/asa/asa-scala/download/ ; Written in Japanese)
+It requires ASA (available at http://www.cl.cs.okayama-u.ac.jp/study/project/asa/asa-scala/download/ ; Written in Japanese), CaboCha (https://taku910.github.io/cabocha/), and MeCab (http://taku910.github.io/mecab/).
 
 For details about ASA, See http://www.cl.cs.okayama-u.ac.jp/study/project/asa/ (Written in Japanese)
 
