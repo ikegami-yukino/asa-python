@@ -1,5 +1,5 @@
 from .asa import ASA
 
-VERSION = (0, 1, 5)
-__version__ = "0.1.5"
+VERSION = (0, 2)
+__version__ = "0.2"
 __all__ = ["ASA"]
