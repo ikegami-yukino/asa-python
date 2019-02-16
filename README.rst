@@ -36,7 +36,8 @@ Example
  # Let's analyze a sample sentence
  analyzer.parse('彼は村長だ')
  # =>
- [{'category': '人',
+ [{'ID': 0,
+   'category': '人',
    'frame': '1-copula',
    'link': 1,
    'main': '彼',
@@ -44,7 +45,8 @@ Example
    'tense': 'PRESENT',
    'type': 'elem',
    'wakati': ['彼\tカレ\t彼\t名詞,代名詞,一般\t\t\tO', 'は\tハ\tは\t助詞,係助詞\t\t\tO']},
-  {'category': '人',
+  {'ID': 1,
+   'category': '人',
    'frame': '0-elem',
    'link': -1,
    'main': '村長',
@@ -57,7 +59,6 @@ Example
    'voice': 'ACTIVE',
    'wakati': ['村長\tソンチョウ\t村長\t名詞,一般\t\t\tO', 'だ\tダ\tだ\t助動詞\t特殊・ダ\t基本形\tO']}]
 
-
 LICENSE
 =========
 
@@ -69,6 +70,16 @@ Copyright
 
 ASA Python
 (c) 2017- Yukino Ikegami. All Rights Reserved.
+
+ASA (Original version)
+(c) Okayama University Takeuchi Lab.
+
+ACKNOWLEDGEMENT
+=================
+
+This module uses 意味役割付与システム (ASA)
+I thank to Okayama University Takeuchi Lab.
+
 
 .. |pyversion| image:: https://img.shields.io/pypi/pyversions/asa.svg
 
